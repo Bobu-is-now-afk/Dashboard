@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>富康花園 門口資訊站 Dashboard</title>
+    <meta name="description" content="專為 iPad mini 橫向設計的將軍澳富康花園門口資訊站 Dashboard" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function() {
+        try {
+          var nativeFetch = window.fetch;
+          if (nativeFetch) {
+            var customFetch = nativeFetch.bind(window);
+            Object.defineProperty(window, 'fetch', {
+              get: function() {
+                return customFetch;
+              },
+              set: function(fn) {
+                customFetch = fn;
+              },
+              configurable: true,
+              enumerable: true,
+            });
+          }
+        } catch (e) {
+          // Graceful fallback
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#faf7f5] text-[#4a4a4a] antialiased select-none font-sans overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

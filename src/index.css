@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+    background-color: #faf7f5;
+    color: #111111;
+  }
+}
+
+.font-cultural-serif {
+  font-family: 'Noto Serif TC', Georgia, serif;
+}
+
+.font-digits {
+  font-family: 'Outfit', 'JetBrains Mono', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Warm Organic Shadows & Borders */
+.shadow-organic-sm {
+  box-shadow: 0 2px 8px -2px rgba(45, 45, 45, 0.04), 0 1px 4px -1px rgba(45, 45, 45, 0.02);
+}
+
+.shadow-organic-md {
+  box-shadow: 0 8px 24px -4px rgba(45, 45, 45, 0.06), 0 2px 6px -1px rgba(45, 45, 45, 0.03);
+}
+
+/* Custom scrollbars matching warm stone palette */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf7f5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e8e2de;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5bcb6;
+}
+
+/* Live pulse animation */
+@keyframes pulse-warm {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-warm {
+  animation: pulse-warm 2s infinite ease-in-out;
+}
+

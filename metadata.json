@@ -1,0 +1,6 @@
+{
+  "name": "富康花園 門口資訊站 Dashboard",
+  "description": "專為 iPad mini 橫向設計的將軍澳富康花園門口資訊站，整合超大時鐘、香港天文台即時天氣、港鐵將軍澳站及富康花園/唐明街巴士即時到站時間 (ETA) 與香港電台 RTHK 直播。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
